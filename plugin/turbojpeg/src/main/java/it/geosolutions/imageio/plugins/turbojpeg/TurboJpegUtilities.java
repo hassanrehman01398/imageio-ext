@@ -79,7 +79,7 @@ public class TurboJpegUtilities {
         } catch (java.lang.UnsatisfiedLinkError e) {
             String os = System.getProperty("os.name").toLowerCase();
             if (os.indexOf("mac") >= 0) {
-                System.load("/usr/lib/libturbojpeg.jnilib");
+                System.load("/usr/local/lib/libturbojpeg.jnilib");
             } else {
                 throw e;
             }
